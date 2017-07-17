@@ -3,13 +3,13 @@ spring.profiles.active: development
 spring:
   profiles: cloud
   neo4j:
-    host: ${SPRING_NEO4J_HOST:192.168.99.101}
+    host: ${SPRING_NEO4J_HOST:172.27.10.141}
     port: ${SPRING_NEO4J_PORT:7474}
 ---
 spring:
   profiles: development
   neo4j:
-    host: ${SPRING_NEO4J_HOST:192.168.99.101}
+    host: ${SPRING_NEO4J_HOST:172.27.10.141}
     port: ${SPRING_NEO4J_PORT:7474}
 ---
 spring:
@@ -29,7 +29,7 @@ eureka:
 spring:
   profiles: test
   neo4j:
-    host: ${SPRING_NEO4J_HOST:192.168.99.101}
+    host: ${SPRING_NEO4J_HOST:172.27.10.141}
     port: ${SPRING_NEO4J_PORT:7474}
 eureka:
   client:
